@@ -1,13 +1,12 @@
-import { useState } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import "./styles/globals.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Home } from "./components/Home";
+import "tailwindcss/tailwind.css";
 
 function App() {
   return (
     <Router>
-      <h1>Hello React Router</h1>
+      <p className="text-white bg-black w-20">Hello world!</p>
       <Route path="/">
         <Home />
       </Route>
